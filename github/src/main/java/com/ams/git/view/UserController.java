@@ -77,4 +77,11 @@ public class UserController {
     }
 
 
+
+    @RequestMapping("/getadd")
+    public String getadd() {
+
+        return "add";
+    }
+
 }
