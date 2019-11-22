@@ -30,11 +30,15 @@
         select * from csd.document
         <where>
              <if test="name != null">
-               name=#{name}
+               name=#{name},
             </if>
             <if test="us1 != null">
-            and us1=#{us1}
+            and us1=#{us1},
             </if>
+            <if test="1= 1">
+            and 1=1
+            </if>
+
         </where>
     </select>
 
