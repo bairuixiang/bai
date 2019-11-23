@@ -52,10 +52,14 @@ public class UserService implements IUserService {
         map.put("likeFind",like);
         List<User> users = userDao.likeFind(map);
         List<User> users1 = userDao.likeFind1(map);
+        if (users1 != null){
+            users.addAll(users1);
+        }
         List<User> users2 = userDao.likeFind2(map);
+        if (users2 != null){
+            users.addAll(users2);
+        }
 
-        users.addAll(users1);
-        users.addAll(users2);
         return users;
     }
 

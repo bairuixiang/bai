@@ -44,15 +44,33 @@
     </select>
 
     <select id="likeFind" resultMap="userMapper">
-        select * from csd.document where name like <bind name="likeFind" value="'%'+like+'%'"/> #{likeFind}
+        select * from csd.document
+        <where>
+        <if test="likeName != null">
+            <bind name="likeName" value="'%'+likeName+'%'"/>
+            name like #{likeName}
+        </if>
+        </where>
     </select>
 
     <select id="likeFind1" resultMap="userMapper">
-        select * from csd.document where brief like <bind name="likeFind" value="'%'+like+'%'"/> #{likeFind}
+        select * from csd.document
+        <where>
+        <if test="likeName != null">
+            <bind name="likeName" value="'%'+likeName+'%'"/>
+            brief like #{likeName}
+        </if>
+        </where>
     </select>
 
 
     <select id="likeFind2" resultMap="userMapper">
-        select * from csd.document where us1 like <bind name="likeFind" value="'%'+like+'%'"/> #{likeFind}
+        select * from csd.document
+        <where>
+        <if test="likeName != null">
+            <bind name="likeName" value="'%'+likeName+'%'"/>
+            us1 like #{likeName}
+        </if>
+        </where>
     </select>
 </mapper>
