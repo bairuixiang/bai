@@ -29,16 +29,17 @@
     <select id="selectall" resultMap="userMapper">
         select * from csd.document
         <where>
-             <if test="name != null">
-               name=#{name},
-            </if>
-            <if test="us1 != null">
-            and us1=#{us1},
-            </if>
-            <if test="1= 1">
-            and 1=1
+            <if test="name != null">
+                <if test=" name != ''">
+                    name=#{name}
+                </if>
             </if>
 
+            <if test="us1 != null">
+                <if test=" us1 != ''">
+                    and us1=#{us1}
+                </if>
+            </if>
         </where>
     </select>
 
