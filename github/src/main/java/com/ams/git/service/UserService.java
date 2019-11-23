@@ -8,7 +8,9 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class UserService implements IUserService {
@@ -43,4 +45,19 @@ public class UserService implements IUserService {
     public List<User> selectall(User user) {
         return userDao.selectall(user);
     }
+
+    @Override
+    public List<User> likeFind(String like) {
+        Map<String, String> map = new HashMap<>();
+        map.put("likeFind",like);
+        List<User> users = userDao.likeFind(map);
+        List<User> users1 = userDao.likeFind1(map);
+        List<User> users2 = userDao.likeFind2(map);
+
+        users.addAll(users1);
+        users.addAll(users2);
+        return users;
+    }
+
+
 }

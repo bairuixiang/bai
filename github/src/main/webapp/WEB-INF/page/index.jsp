@@ -31,13 +31,10 @@
 
 <div class="container col-xs-3 col-md-offset-3" style="margin-top: 30px" >
     <form class="form-inline" action="${pageContext.request.contextPath}/user/selectall" method="post">
-        <div class="input-group">
-            <input type="text" class="form-control" name="name" placeholder="请输入文章名" style="width: 100px">
-        </div>
             <div class="input-group">
-                <input type="text" class="form-control" name="us1" placeholder="请上传人" style="width: 100px">
+                <input type="text" class="form-control" name="like" placeholder="查找文章" style="width: 100px">
             </div>
-        <button type="submit" class="btn" style="height: 35px;background: black;color: #A89C03;">查找</button>
+        <button type="submit" class="btn" style="height: 35px;background: black;color: #A89C03;">搜索</button>
     </form>
 </div>
 <div class="container" style="margin-top: 90px">

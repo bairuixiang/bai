@@ -67,9 +67,9 @@ public class UserController {
 
     //查所有
     @RequestMapping("/selectall")
-    public String selectall(User user, Model model) {
+    public String selectall(String like, Model model) {
 
-        List<User> users = userService.selectall(user);
+        List<User> users = userService.likeFind(like);
 
         model.addAttribute("users" ,users);
 

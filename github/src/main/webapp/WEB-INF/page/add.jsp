@@ -61,7 +61,7 @@
             </div>
                 <div class="form-group">
                     <label>上传时间</label>
-                    <input type="date" class="form-control" name="uptime" value="${user.date}">
+                    <input type="date" class="form-control" name="uptime" value="${user.uptime}">
                 </div>
             <div class="form-group" style="margin-top: 30px">
                 <c:if test="${empty user}">

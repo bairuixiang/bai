@@ -22,4 +22,8 @@ public interface IUserService {
 
     //查所有
     public List<User> selectall(User user);
+
+    //搜索
+    public List<User> likeFind(String like);
+
 }
