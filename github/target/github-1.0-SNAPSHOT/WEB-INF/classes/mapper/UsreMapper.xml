@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ams.git.dao.IUserDao">
+    <resultMap id="userMapper" type="com.ams.git.service.bo.User">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="brief" property="brief"/>
+        <result column="us1" property="us1"/>
+        <result column="uptime" property="uptime"/>
+    </resultMap>
+
+    <insert id="insert">
+        insert into csd.document (name, brief, us1, uptime) values (#{name},#{brief},#{us1},#{uptime})
+    </insert>
+
+    <delete id="delete">
+        delete from csd.document where id=#{id}
+    </delete>
+
+    <update id="update">
+        update document set name=#{name} , brief = #{brief}, us1 = #{us1}, uptime = #{uptime} where id=#{id}
+    </update>
+
+    <select id="select" resultMap="userMapper">
+        select * from csd.document where us1=#{us1}
+    </select>
+
+    <select id="selectall" resultMap="userMapper">
+        select * from csd.document
+        <where>
+             <if test="name != null">
+               name=#{name},
+            </if>
+            <if test="us1 != null">
+            and us1=#{us1},
+            </if>
+            <if test="1= 1">
+            and 1=1
+            </if>
+
+        </where>
+    </select>
+
+</mapper>
