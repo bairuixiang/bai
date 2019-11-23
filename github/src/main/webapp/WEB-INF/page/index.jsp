@@ -30,7 +30,7 @@
 </div>
 
 <div class="container col-xs-3 col-md-offset-3" style="margin-top: 30px" >
-    <form class="form-inline" action="${pageContext.request.contextPath}/user/selectall" method="post">
+    <form class="form-inline" action="${pageContext.request.contextPath}/user/selectlike" method="post">
             <div class="input-group">
                 <input type="text" class="form-control" name="like" placeholder="查找文章" style="width: 100px">
             </div>

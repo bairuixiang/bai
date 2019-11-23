@@ -7,6 +7,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Repository;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -65,9 +66,9 @@ public class UserController {
         return "add";
     }
 
-    //查所有
-    @RequestMapping("/selectall")
-    public String selectall(String like, Model model) {
+    //搜索
+    @RequestMapping("/selectlike")
+    public String selectlike(String like, Model model) {
 
         List<User> users = userService.likeFind(like);
 
@@ -76,6 +77,12 @@ public class UserController {
         return "index";
     }
 
+    @RequestMapping("/selectall")
+    public String selectall(User user, Model model){
+        List<User> selectall = userService.selectall(user);
+        model.addAttribute("users",selectall);
+        return "index";
+    }
 
 
     @RequestMapping("/getadd")
