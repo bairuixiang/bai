@@ -47,7 +47,6 @@
             <td>文章名</td>
             <td>摘要</td>
             <td>上传者</td>
-            <td>上传者</td>
             <td>上传时间</td>
             <td></td>
             <td></td>
@@ -60,8 +59,8 @@
             <td>${user.brief}</td>
             <td>${user.us1}</td>
             <td>${user.uptime}</td>
-        <td><a href="${pageContext.request.contextPath}/user/modify?id=${user.id}"><div style="height: 35px;background: black;color: #A89C03" class="btn btn-primary ">修改</div></a></td>
-        <td><a href="${pageContext.request.contextPath}/user/delete?id=${user.id}"><div style="height: 35px;background: black;color: #A89C03;" class="btn btn-primary ">修改</div></a></td>
+        <td><a href="${pageContext.request.contextPath}/user/select?id=${user.id}"><div style="height: 35px;background: black;color: #A89C03" class="btn btn-primary ">修改</div></a></td>
+        <td><a href="${pageContext.request.contextPath}/user/delete?id=${user.id}"><div style="height: 35px;background: black;color: #A89C03;" class="btn btn-primary ">删除</div></a></td>
         </tr>
         </c:forEach>
         </c:if>
