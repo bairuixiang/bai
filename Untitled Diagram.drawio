@@ -1,1 +1,47 @@
-<mxfile host="app.diagrams.net" modified="2021-11-15T10:04:25.596Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="ywiFb16p7Udv2sIzbZtm" version="15.7.3" type="github"><diagram id="6hybmaL1eSnBTan81qKj" name="Page-1">jZNLb4MwDIB/DcdKQNbXsaXddtikaUzaOQOXRDIEhVBof/2cJkBRNWkXZH9+xjYBS8r+RfNavKscMIjDvA/YIYjj9WZDXwsuDjwtYwcKLXOHogmk8goehp62Modm5miUQiPrOcxUVUFmZoxrrbq520nhvGrNC3gAacbxkX7L3AhHN/F64q8gCzFUjlZbZyn54Oxf0gieq+4OsWPAEq2UcVLZJ4B2dsNcXNzzH9axMQ2V+U9AeNou03qB3ZWxTmB8DFEtfJYzx9Y/2DdrLsMEqO/aim2Jb/IEKCvS9lTXyEzW/FacbLvMKG0NoGUJBkg+oPf/mNi+E9JAWvPM5uzoZogJUyJpEYm0R8MpRI86Iq8b+XNrJySiIWt1I8/wCY07F0vPYPvhuENZVMSMsokbqiOr4ssqB7YiolpjO0rGc7HBfgiUAvo/pxuNO6NbB0Xv0Rdy8QFLv2V/5tHa6910NMMhiLt7YaGH3N9pMWaeVkmC3+agTldzs939euz4Cw==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-11-23T11:25:02.585Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36" etag="cjlJatBRYzG6MlV-H9uF" version="15.8.2" type="github">
+  <diagram id="6hybmaL1eSnBTan81qKj" name="Page-1">
+    <mxGraphModel dx="788" dy="452" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="InvX3_PrvTnMnX5K2X4x-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="InvX3_PrvTnMnX5K2X4x-6" target="InvX3_PrvTnMnX5K2X4x-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="InvX3_PrvTnMnX5K2X4x-6" value="用户确认收货" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="InvX3_PrvTnMnX5K2X4x-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="InvX3_PrvTnMnX5K2X4x-9" target="InvX3_PrvTnMnX5K2X4x-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="InvX3_PrvTnMnX5K2X4x-13" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="InvX3_PrvTnMnX5K2X4x-12">
+          <mxGeometry x="-0.4545" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="InvX3_PrvTnMnX5K2X4x-9" value="查询配送单" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="136" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="InvX3_PrvTnMnX5K2X4x-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="InvX3_PrvTnMnX5K2X4x-11" target="InvX3_PrvTnMnX5K2X4x-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="InvX3_PrvTnMnX5K2X4x-16" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="InvX3_PrvTnMnX5K2X4x-15">
+          <mxGeometry x="-0.3864" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="InvX3_PrvTnMnX5K2X4x-11" value="是否发货 订单状态&lt;br&gt;!=2" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="252" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="InvX3_PrvTnMnX5K2X4x-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="InvX3_PrvTnMnX5K2X4x-14" target="InvX3_PrvTnMnX5K2X4x-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="InvX3_PrvTnMnX5K2X4x-14" value="改变订单状态 = 3" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="InvX3_PrvTnMnX5K2X4x-19" value="初始化订单" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
